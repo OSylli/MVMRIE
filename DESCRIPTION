@@ -1,0 +1,18 @@
+Package: MVMRIE
+Title: Multivariable Mendelian Randomization with Incomplete Measurements on the Exposure Variables
+Version: 0.0.1
+Authors@R: 
+    person("Yilun", "Li", email = "yilunli1997@gmail.com", role = c("aut", "cre"))
+Description: This package is used for multivariable Mendelian randomization with two continuous exposure variables and a continuous outcome, where the exposure variables are potentially unmeasured and subject to detection limits. The estimations are carried out based on the maximum likelihood estimation method, and the EM algorithm is applied to handle the incomplete measurements on the exposures.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
+Imports: Rcpp (>= 0.11.0), RcppArmadillo, data.table, stats, statmod, mathjaxr
+Suggests: 
+    testthat (>= 3.0.0),
+    devtools,
+    rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+RdMacros: mathjaxr 
+Config/testthat/edition: 3
